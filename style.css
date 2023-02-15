@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 4rem;
+  margin: 0.7rem 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+.blackish {
+  background-color: #000000;
+  color: white;
+}
+
+.yellowish {
+  background-image: linear-gradient(to right, rgba(250, 250, 3, 0.913), rgba(227, 218, 218, 0.119));
+}
+
+.bluish {
+  background-image: linear-gradient(to right, rgba(0, 106, 255, 0.966), rgba(116, 204, 241, 0.055));
+}
+
+.reddish {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.611), rgba(246, 172, 35, 0.407));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 0.7rem 3rem;
+  color: white;
+  margin-top: 1rem;
+}
+.nav1 a {
+  color: white;
+}
+
+.nav2 {
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.nav2 a {
+  color: #000000;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icontext {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vertical-line {
+  border-right: 2px solid white;
+  width: 20px;
+  height: 20px;
+}
+
+.vertical-line1 {
+  border-right: 2px solid #000000;
+  width: 20px;
+  height: 20px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.big {
+  font-size: 2rem;
+  color: #0b18b7;
+}
+
+.content {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 2rem;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.box1 {
+  background-color: #000000;
+  border-radius: 20px;
+  border: none;
+  padding-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  width: 30%;
+  height: 40%;
+  margin-top: 2rem;
+}
+
+.box {
+  background-color: #fd7349;
+}
+
+.redh {
+  background-color: #dc2541;
+}
+
+.above {
+  margin-top: -6rem;
+  margin-left: -2rem;
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.pc {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.iphone {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.box-blue {
+  background-color: #0089f7;
+}
+
+.body2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  margin-top: 2rem;
+}
+.body2 .box1 {
+  width: 60%;
+}
+.body2 .box6 {
+  width: 40%;
+  height: 90%;
+  padding-bottom: 5rem;
+}
+.body2 .box6 h2 {
+  font-size: 1.5rem;
+}
+.body2 .boxh {
+  width: 80%;
+  height: 100%;
+}
+
+.boxh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  padding: 1.8rem 0;
+  color: white;
+  margin-left: 4rem;
+}
+
+.smallbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: -4rem;
+}
+.smallbox h2 {
+  font-size: 1rem;
+}
+
+.heading {
+  text-align: center;
+  margin: 2rem;
+}
+
+.cards .upcards,
+.cards .downcards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  margin-top: 2rem;
+}
+.cards .card {
+  width: 23%;
+  height: 300px;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid #000000;
+  position: relative;
+}
+.cards .card1 {
+  height: 340px;
+}
+.cards .image img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+.cards .desc {
+  width: 100%;
+  height: 30%;
+}
+.cards .horiz {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards .horiz p {
+  font-size: 0.9rem;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  color: white;
+  padding-top: 0.5rem;
+  text-align: center;
+  top: 3%;
+  left: 3%;
+}
+
+.btn {
+  padding: 0.7rem 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blue;
+  color: white;
+  margin-top: 1rem;
+}
+
+.computer {
+  margin: 0 3rem;
+  padding: 1rem 8rem;
+  margin-top: 9rem;
+  display: flex;
+  gap: 4rem;
+  background-color: #000000;
+  border-radius: 20px;
+  color: white;
+}
+.computer img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  margin-top: -7rem;
+}
+.computer .compdesc {
+  width: 50%;
+}
+
+hr {
+  width: 600px;
+  height: 2px;
+  color: #000000;
+}
+
+.new {
+  padding: 0 3rem;
+  margin: 3rem 0;
+}
+.new .line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.new .cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big {
+  position: relative;
+  padding: 0 3rem;
+  margin: 10rem 0;
+}
+.big .bl {
+  background-color: #000000;
+}
+.big .br {
+  background-color: blue;
+}
+.big .content {
+  width: 80%;
+}
+.big .pc1 {
+  width: 400px;
+  position: absolute;
+  right: 45%;
+  bottom: 21%;
+}
+.big .pc2 {
+  width: 400px;
+  position: absolute;
+  right: -10%;
+  bottom: -70%;
+}
+
+.latest h1 {
+  text-align: center;
+}
+.latest .latestnews {
+  display: flex;
+  justify-content: center;
+  padding: 0 3rem;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.latest .latestnews .date {
+  display: flex;
+  justify-self: center;
+  border: 1px solid #000000;
+  flex-direction: column;
+  gap: 3rem;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.latest .latestnews .date hr {
+  width: 200px;
+  background-color: blue;
+}
+.latest .latestnews .date h2 {
+  padding-top: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.redicons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  margin: 3rem 0;
+}
+
+.last {
+  margin: 0 3rem;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  background-color: #0089f7;
+}
+.last h2 {
+  font-weight: lighter;
+  font-size: 3rem;
+  padding: 0.5rem 1rem 1rem;
+}
+.last h1 {
+  padding-top: 0.5rem;
+}
+.last button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-left: 18rem;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 50%;
+}
+.last button a {
+  background-color: white;
+  border-radius: 20px;
+  padding: 0.3rem 0.5rem;
+  color: #0b18b7;
+  font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 3rem;
+  margin-top: 3rem;
+}
+.footer a {
+  color: #000000;
+}
+.footer .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.log {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blu {
+  color: #0b18b7;
+  font-size: 2rem;
+}
+
+.redi {
+  color: #ff0002;
+  font-size: 2rem;
+}
+
+.down hr {
+  margin: 3rem 3rem;
+  width: 100%;
+}
+.down .footnote {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.down .footnote a {
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */

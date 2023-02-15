@@ -1,0 +1,36 @@
+button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 4rem;
+  margin: 0.7rem 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+button:hover {
+  transform: scale(0.9);
+}
+.blackish {
+  background-color: $color-black;
+  color: $color-white;
+}
+.yellowish {
+  background-image: linear-gradient(
+    to right,
+    rgba(250, 250, 3, 0.913),
+    rgba(227, 218, 218, 0.119)
+  );
+}
+.bluish {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 106, 255, 0.966),
+    rgba(116, 204, 241, 0.055)
+  );
+}
+.reddish {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.611),
+    rgba(246, 172, 35, 0.407)
+  );
+}
