@@ -51,6 +51,10 @@ a {
 }
 .nav1 a {
   color: white;
+  transition: all 0.5s;
+}
+.nav1 a:hover {
+  color: orangered;
 }
 
 .nav2 {
@@ -62,6 +66,9 @@ a {
 }
 .nav2 a {
   color: #000000;
+}
+.nav2 a:hover {
+  color: orangered;
 }
 
 .contacts {
@@ -98,6 +105,86 @@ a {
   color: #0b18b7;
 }
 
+.uppercards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem;
+}
+
+.first-card {
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 0.5rem;
+  width: 30%;
+}
+.first-card a {
+  text-decoration: none;
+  color: white;
+}
+
+.second-card {
+  background-color: #fd7349;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  width: 30%;
+}
+.second-card .above {
+  margin-top: -6rem;
+  margin-left: -2rem;
+  width: 100%;
+}
+.second-card a {
+  color: #000000;
+}
+
+.third-card {
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 30%;
+}
+.third-card .lapi {
+  width: 100%;
+}
+.third-card a {
+  color: white;
+}
+
+.fourth-card {
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  width: 40%;
+}
+.fourth-card .cam {
+  width: 100%;
+}
+.fourth-card a {
+  color: white;
+}
+
+.sixth-card {
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 40%;
+}
+.sixth-card .cam {
+  width: 100%;
+}
+.sixth-card a {
+  color: white;
+}
+
+.salescards {
+  transition: all 3s;
+}
+
+.salescards:hover {
+  transform: scale(0.95);
+}
+
 .content {
   width: 100%;
   height: 50%;
@@ -109,13 +196,6 @@ a {
   padding-left: 2rem;
 }
 
-.body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 3rem;
-}
-
 .box1 {
   background-color: #000000;
   border-radius: 20px;
@@ -124,8 +204,8 @@ a {
   padding: 1rem;
   text-align: center;
   color: white;
-  width: 30%;
-  height: 40%;
+  width: 50%;
+  height: auto;
   margin-top: 2rem;
 }
 
@@ -135,13 +215,6 @@ a {
 
 .redh {
   background-color: #dc2541;
-}
-
-.above {
-  margin-top: -6rem;
-  margin-left: -2rem;
-  width: 100%;
-  height: auto;
 }
 
 h2 {
@@ -173,22 +246,7 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 0 3rem;
-  margin-top: 2rem;
-}
-.body2 .box1 {
-  width: 60%;
-}
-.body2 .box6 {
-  width: 40%;
-  height: 90%;
-  padding-bottom: 5rem;
-}
-.body2 .box6 h2 {
-  font-size: 1.5rem;
-}
-.body2 .boxh {
-  width: 80%;
-  height: 100%;
+  margin-top: 0.5rem;
 }
 
 .boxh {
@@ -196,12 +254,17 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 30%;
   border-radius: 20px;
   padding: 1.8rem 0;
   color: white;
   margin-left: 4rem;
+}
+.boxh a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .smallbox {
@@ -222,39 +285,61 @@ h1 {
 }
 
 .cards .upcards,
-.cards .downcards {
+.cards .downcards,
+.cardi .upcards,
+.cardi .downcards {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
   padding: 0 3rem;
   margin-top: 2rem;
 }
-.cards .card {
-  width: 23%;
+.cards .upcards a,
+.cards .downcards a,
+.cardi .upcards a,
+.cardi .downcards a {
+  color: #000000;
+}
+.cards .card,
+.cardi .card {
+  width: 250px;
   height: 300px;
   padding: 2rem;
   border-radius: 2rem;
   border: 1px solid #000000;
   position: relative;
 }
-.cards .card1 {
-  height: 340px;
-}
-.cards .image img {
+.cards .card .image img,
+.cardi .card .image img {
   width: 100%;
   height: 40%;
   object-fit: cover;
 }
-.cards .desc {
-  width: 100%;
-  height: 30%;
+.cards .card1,
+.cardi .card1 {
+  height: 340px;
 }
-.cards .horiz {
+.cards .image img,
+.cardi .image img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+.cards .desc,
+.cardi .desc {
+  width: 100%;
+  height: 50%;
+}
+.cards .horiz,
+.cardi .horiz {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.cards .horiz p {
+.cards .horiz p,
+.cardi .horiz p {
   font-size: 0.9rem;
 }
 
@@ -290,16 +375,19 @@ h1 {
   gap: 4rem;
   background-color: #000000;
   border-radius: 20px;
+}
+.computer a {
   color: white;
 }
 .computer img {
   width: 50%;
   height: auto;
   object-fit: cover;
-  margin-top: -7rem;
+  margin-left: 20rem;
+  margin-top: -17rem;
 }
 .computer .compdesc {
-  width: 50%;
+  width: 100%;
 }
 
 hr {
@@ -314,11 +402,8 @@ hr {
 }
 .new .line {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-}
-.new .cards {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -327,11 +412,25 @@ hr {
   padding: 0 3rem;
   margin: 10rem 0;
 }
+.big .boxhi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
 .big .bl {
   background-color: #000000;
+  width: 130%;
+  border-radius: 20px;
+  color: white;
+  padding: 1rem;
 }
 .big .br {
   background-color: blue;
+  width: 130%;
+  border-radius: 20px;
+  color: white;
 }
 .big .content {
   width: 80%;
@@ -343,10 +442,11 @@ hr {
   bottom: 21%;
 }
 .big .pc2 {
-  width: 400px;
+  width: 300px;
   position: absolute;
-  right: -10%;
-  bottom: -70%;
+  right: 20%;
+  bottom: 25%;
+  rotate: -45deg;
 }
 
 .latest h1 {
@@ -354,10 +454,14 @@ hr {
 }
 .latest .latestnews {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 0 3rem;
   margin-top: 3rem;
-  gap: 2rem;
+  gap: 1rem;
+}
+.latest .latestnews a {
+  color: black;
 }
 .latest .latestnews .date {
   display: flex;
@@ -381,6 +485,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0 3rem;
   margin: 3rem 0;
 }
@@ -390,8 +495,8 @@ hr {
   padding: 3rem;
   text-align: center;
   border-radius: 20px;
-  color: white;
   background-color: #0089f7;
+  color: white;
 }
 .last h2 {
   font-weight: lighter;
@@ -421,6 +526,7 @@ hr {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   padding: 0 3rem;
@@ -472,4 +578,95 @@ hr {
 }
 .down .footnote a {
   color: #000000;
+}
+
+html {
+  font-size: 100%;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 70%;
+  }
+  .downcards .salescards {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .body2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .uppercards .salescards,
+  .body2 .salescards {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .uppercards .boxh,
+  .body2 .boxh {
+    width: 100%;
+    margin-left: 1rem;
+  }
+  .cards .upcards .card1 .btn {
+    display: none;
+  }
+  .cards .upcards .card {
+    width: 45%;
+    height: 250px;
+  }
+  .latest .salescards {
+    width: 40%;
+  }
+  .latest hr {
+    display: none;
+  }
+  .last {
+    width: 80%;
+  }
+  .last button {
+    width: 100%;
+    margin-left: 0;
+  }
+  .footer .log {
+    width: 80%;
+    margin-left: 8rem;
+  }
+  .footer .row {
+    width: 50%;
+    margin-top: 1rem;
+  }
+  .computer {
+    position: relative;
+  }
+  .computer img {
+    position: absolute;
+    left: 10%;
+    right: 19%;
+  }
+  .big .boxhi {
+    width: 80%;
+  }
+  .big img {
+    display: none;
+  }
+  .big .br {
+    margin-top: 2rem;
+    padding-right: 3rem;
+  }
+  .nav1 .contacts .phone {
+    display: none;
+  }
+  .nav2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav2 .home .vertical-line1 {
+    display: none;
+  }
+  .nav2 .contacts {
+    padding: 0.2rem 0;
+  }
+  .redicons .log {
+    width: 50%;
+    padding-top: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

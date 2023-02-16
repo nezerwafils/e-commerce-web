@@ -1,0 +1,55 @@
+    <section class="body">
+      <a href="#">
+        <div class="box1 ">
+          <div class="content">
+            <p>Blast Past Fast</p>
+            <h2>IPhone 12 Pro</h2>
+            <h2>It's A Leap Year</h2>
+            <button>Shop By Category</button>
+          </div>
+          <div class="inside">
+            <img class="iphone" src="./images/pngwing.com (4).png" alt="" />
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="box1 box">
+          <div class="inside">
+            <img class="above" src="./images/pngwing.com (5).png" alt="" />
+          </div>
+
+          <div class="content">
+            <p>Noise Cancelling</p>
+            <h1>Beats Solo</h1>
+            <h1>Wireless-Pro</h1>
+            <button class="bluish">Shop By Category</button>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="box1">
+          <div class="content">
+            <p>Macbook Pro</p>
+            <h2>More Power</h2>
+            <h2>Wakes Instantly</h2>
+            <button>Shop By Category</button>
+          </div>
+          <div class="inside">
+            <img class="pc" src="./images/pngwing.com (6).png" alt="" />
+          </div>
+        </div>
+      </a>
+    </section>
+    <div class="box1 box-blue box4">
+        <div class="content">
+          <p>Blast Past Fast</p>
+          <h2>Nikon</h2>
+          <h2>DHLR Camera</h2>
+          <button class="blackish" style="color: white">
+            Shop By Category
+          </button>
+        </div>
+        <div class="inside">
+          <img class="pc" src="./images/pngwing.com (7).png" alt="" />
+        </div>
+      </div>

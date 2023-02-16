@@ -10,6 +10,7 @@
 a {
   text-decoration: none;
 }
+
 .nav1 {
   display: flex;
   align-items: center;
@@ -20,6 +21,10 @@ a {
   margin-top: 1rem;
   a {
     color: $color-white;
+    transition: all 0.5s;
+  }
+  a:hover {
+    color: orangered;
   }
 }
 .nav2 {
@@ -30,6 +35,9 @@ a {
   margin-top: 1rem;
   a {
     color: $color-black;
+  }
+  a:hover {
+    color: orangered;
   }
 }
 .contacts {
@@ -61,6 +69,79 @@ a {
   color: $color-blue;
 }
 
+.uppercards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem;
+}
+.first-card {
+  background-color: $color-black;
+  border-radius: 20px;
+  padding: 0.5rem;
+  width: 30%;
+  a {
+    text-decoration: none;
+    color: $color-white;
+  }
+}
+.second-card {
+  background-color: $color-orange;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  width: 30%;
+  .above {
+    margin-top: -6rem;
+    margin-left: -2rem;
+    width: 100%;
+  }
+  a {
+    color: $color-black;
+  }
+}
+.third-card {
+  background-color: $color-black;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 30%;
+  .lapi {
+    width: 100%;
+  }
+  a {
+    color: $color-white;
+  }
+}
+.fourth-card {
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  width: 40%;
+  .cam {
+    width: 100%;
+  }
+  a {
+    color: $color-white;
+  }
+}
+.sixth-card {
+  background-color: $color-black;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 40%;
+  .cam {
+    width: 100%;
+  }
+  a {
+    color: $color-white;
+  }
+}
+
+.salescards {
+  transition: all 3s;
+}
+.salescards:hover {
+  transform: scale(0.95);
+}
 .content {
   width: 100%;
   height: 50%;
@@ -72,13 +153,6 @@ a {
   padding-left: 2rem;
 }
 
-.body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 3rem;
-}
-
 .box1 {
   background-color: $color-black;
   border-radius: 20px;
@@ -87,22 +161,18 @@ a {
   padding: 1rem;
   text-align: center;
   color: $color-white;
-  width: 30%;
-  height: 40%;
+  width: 50%;
+  height: auto;
   margin-top: 2rem;
 }
+
 .box {
   background-color: $color-orange;
 }
 .redh {
   background-color: #dc2541;
 }
-.above {
-  margin-top: -6rem;
-  margin-left: -2rem;
-  width: 100%;
-  height: auto;
-}
+
 h2 {
   font-size: 2rem;
 }
@@ -125,37 +195,28 @@ h1 {
 }
 .body2 {
   display: flex;
+  // flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 0 3rem;
-  margin-top: 2rem;
-  .box1 {
-    width: 60%;
-  }
-  .box6 {
-    width: 40%;
-    height: 90%;
-    padding-bottom: 5rem;
-    h2 {
-      font-size: 1.5rem;
-    }
-  }
-  .boxh {
-    width: 80%;
-    height: 100%;
-  }
+  margin-top: 0.5rem;
 }
 .boxh {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 30%;
   border-radius: 20px;
   padding: 1.8rem 0;
   color: $color-white;
   margin-left: 4rem;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .smallbox {
   display: flex;
@@ -172,22 +233,36 @@ h1 {
   text-align: center;
   margin: 2rem;
 }
-.cards {
+
+.cards,
+.cardi {
   .upcards,
   .downcards {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     padding: 0 3rem;
     margin-top: 2rem;
+    a {
+      color: $color-black;
+    }
   }
   .card {
-    width: 23%;
+    width: 250px;
     height: 300px;
     padding: 2rem;
     border-radius: 2rem;
     border: 1px solid $color-black;
     position: relative;
+    .image {
+      img {
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+      }
+    }
   }
   .card1 {
     height: 340px;
@@ -201,7 +276,7 @@ h1 {
   }
   .desc {
     width: 100%;
-    height: 30%;
+    height: 50%;
   }
   .horiz {
     display: flex;
@@ -212,6 +287,7 @@ h1 {
     }
   }
 }
+
 .circle {
   width: 40px;
   height: 40px;
@@ -242,15 +318,18 @@ h1 {
   gap: 4rem;
   background-color: $color-black;
   border-radius: 20px;
-  color: $color-white;
+  a {
+    color: $color-white;
+  }
   img {
     width: 50%;
     height: auto;
     object-fit: cover;
-    margin-top: -7rem;
+    margin-left: 20rem;
+    margin-top: -17rem;
   }
   .compdesc {
-    width: 50%;
+    width: 100%;
   }
 }
 hr {
@@ -263,11 +342,8 @@ hr {
   margin: 3rem 0;
   .line {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-  }
-  .cards {
-    display: flex;
     justify-content: space-between;
   }
 }
@@ -275,11 +351,25 @@ hr {
   position: relative;
   padding: 0 3rem;
   margin: 10rem 0;
+  .boxhi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
   .bl {
     background-color: $color-black;
+    width: 130%;
+    border-radius: 20px;
+    color: $color-white;
+    padding: 1rem;
   }
   .br {
     background-color: blue;
+    width: 130%;
+    border-radius: 20px;
+    color: $color-white;
   }
   .content {
     width: 80%;
@@ -292,10 +382,11 @@ hr {
     bottom: 21%;
   }
   .pc2 {
-    width: 400px;
+    width: 300px;
     position: absolute;
-    right: -10%;
-    bottom: -70%;
+    right: 20%;
+    bottom: 25%;
+    rotate: -45deg;
   }
 }
 .latest {
@@ -304,10 +395,14 @@ hr {
   }
   .latestnews {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0 3rem;
     margin-top: 3rem;
-    gap: 2rem;
+    gap: 1rem;
+    a {
+      color: black;
+    }
     .date {
       display: flex;
       justify-self: center;
@@ -331,7 +426,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  flex-wrap: wrap;
   padding: 0 3rem;
   margin: 3rem 0;
 }
@@ -340,8 +435,8 @@ hr {
   padding: 3rem;
   text-align: center;
   border-radius: 20px;
-  color: $color-white;
   background-color: $color-lightblue;
+  color: $color-white;
   h2 {
     font-weight: lighter;
     font-size: 3rem;
@@ -359,6 +454,7 @@ hr {
     background-color: transparent;
     border: 1px solid $color-white;
     width: 50%;
+
     a {
       background-color: $color-white;
       border-radius: 20px;
@@ -370,6 +466,7 @@ hr {
 }
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   padding: 0 3rem;
@@ -417,6 +514,120 @@ hr {
     margin-bottom: 3rem;
     a {
       color: $color-black;
+    }
+  }
+}
+html {
+  font-size: 100%;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 70%;
+  }
+  .downcards {
+    .salescards {
+      width: 80%;
+      margin: 1rem auto;
+    }
+  }
+  .body2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .uppercards,
+  .body2 {
+    .salescards {
+      width: 80%;
+      margin: 1rem auto;
+    }
+    .boxh {
+      width: 100%;
+      margin-left: 1rem;
+    }
+  }
+  .cards {
+    .upcards {
+      .card1 {
+        .btn {
+          display: none;
+        }
+      }
+      .card {
+        width: 45%;
+        height: 250px;
+      }
+    }
+  }
+
+  .latest {
+    .salescards {
+      width: 40%;
+    }
+    hr {
+      display: none;
+    }
+  }
+  .last {
+    width: 80%;
+    button {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .footer {
+    .log {
+      width: 80%;
+      margin-left: 8rem;
+    }
+    .row {
+      width: 50%;
+      margin-top: 1rem;
+    }
+  }
+  .computer {
+    position: relative;
+    img {
+      position: absolute;
+      left: 10%;
+      right: 19%;
+    }
+  }
+  .big {
+    .boxhi {
+      width: 80%;
+    }
+    img {
+      display: none;
+    }
+    .br {
+      margin-top: 2rem;
+      padding-right: 3rem;
+    }
+  }
+  .nav1 {
+    .contacts {
+      .phone {
+        display: none;
+      }
+    }
+  }
+  .nav2 {
+    display: flex;
+    flex-direction: column;
+    .home {
+      .vertical-line1 {
+        display: none;
+      }
+    }
+    .contacts {
+      padding: 0.2rem 0;
+    }
+  }
+  .redicons {
+    .log {
+      width: 50%;
+      padding-top: 0.5rem;
     }
   }
 }
